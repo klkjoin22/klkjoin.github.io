@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Interaktív GTA V térkép</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+
+  <div id="sidebar">
+    <h2>Helyek</h2>
+
+    <div id="filters">
+      <label><input type="checkbox" data-type="all" checked> Összes</label><br>
+      <label><input type="checkbox" data-type="shop" checked> Bolt</label><br>
+      <label><input type="checkbox" data-type="garage" checked> Garázs</label><br>
+      <label><input type="checkbox" data-type="rp" checked> RP hely</label><br>
+    </div>
+
+    <ul id="place-list"></ul>
+
+    <div id="actions">
+      <button id="save-json">Mentés</button>
+      <input type="file" id="load-json" accept="application/json">
+    </div>
+  </div>
+
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
